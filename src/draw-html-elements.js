@@ -97,7 +97,6 @@ function drawMovieTitlesInsideSelectOptions(parentSelect, defaultOptionText)
 }
 
 function selectMovieOnChange(id){
-  getMoviesById(id).then(movie => {
     var oldChild = document.getElementById("movieData");
     var newChild = document.createElement("div");
     newChild.id = "movieData";
@@ -113,6 +112,7 @@ function selectMovieOnChange(id){
       movieActorsListDiv.innerHTML = "";
     }else
     {
+      getMoviesById(id).then(movie => {
       selectedMovieDiv.innerHTML = "Selected movie data:";
       newChild.innerHTML = "Id: " + movie.id + " | " +                          
                            "Title: " + movie.title + " | " +
@@ -132,8 +132,9 @@ function selectMovieOnChange(id){
             })
         }))
        }
-    }
+   
     console.log(movie.title);
   })
+}
  
 }
