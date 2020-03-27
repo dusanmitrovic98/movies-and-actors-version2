@@ -1,0 +1,63 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Star Wars",
+            "year": 2019,
+            "actorsById": [
+                5,
+                6
+            ]
+        },
+        {
+            "id": 2,
+            "title": "The Lord of the Rings",
+            "year": 2001,
+            "actorsById": []
+        },
+        {
+            "id": 3,
+            "title": "Avengers: Age of Ultron",
+            "year": 2000,
+            "actorsById": []
+        },
+        {
+            "id": 4,
+            "title": "Venom",
+            "year": 2018,
+            "actorsById": []
+        }
+    ],
+    "actors": [
+        {
+            "id": 1,
+            "name": "Will",
+            "lastName": "Smith"
+        },
+        {
+            "id": 2,
+            "name": "Johnny",
+            "lastName": "Depp"
+        },
+        {
+            "id": 3,
+            "name": "Robert",
+            "lastName": "De Niro"
+        },
+        {
+            "id": 4,
+            "name": "Al",
+            "lastName": "Pacino"
+        },
+        {
+            "id": 5,
+            "name": "Daisy",
+            "lastName": "Ridley"
+        },
+        {
+            "id": 6,
+            "name": "Hayden",
+            "lastName": "Cristensen"
+        }
+    ]
+}
