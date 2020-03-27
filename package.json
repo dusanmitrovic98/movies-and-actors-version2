@@ -1,0 +1,8 @@
+{
+  "name": "js-dvmax7",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}

@@ -1,0 +1,27 @@
+
+body{
+    background-color: #7952B3;
+}
+
+#movieListDiv {
+  margin-bottom: 5px;
+}
+
+#movieListContainer {
+  margin-bottom: 20px;
+}
+
+#selectMovieLabel {
+  font-style: italic;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+#movieActorsListDiv {
+  margin-top: 20px;
+}
+
+#selectedMovieDiv {
+  margin-top: 20px;
+}
+
