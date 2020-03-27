@@ -1,8 +1,8 @@
 //Links to our database;
 const URL_FETCH_MOVIES =
-  "https://my-json-server.typicode.com/dusanmitrovic98/dev_rwa2/movies/";
+  "https://my-json-server.typicode.com/dusanmitrovic98/movies-and-actors-version2/movies/";
 const URL_FETCH_ACTORS =
-  "https://my-json-server.typicode.com/dusanmitrovic98/dev_rwa2/actors/";
+  "https://my-json-server.typicode.com/dusanmitrovic98/movies-and-actors-version2/actors/";
 
 export async function getMovies() {
   return await (await fetch(URL_FETCH_MOVIES)
