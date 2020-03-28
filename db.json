@@ -58,6 +58,11 @@
             "id": 6,
             "name": "Hayden",
             "lastName": "Cristensen"
+        },
+        {
+          "id": 7,
+          "name": "Tom",
+          "lastName": "Hardy"
         }
     ]
 }
