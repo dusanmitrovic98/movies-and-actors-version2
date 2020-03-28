@@ -111,7 +111,7 @@ function selectMovieOnChange(id){
       newChild.innerHTML = "No movies selected. Please select a movie.";
       movieActorsListDiv.innerHTML = "";
     }else
-    {
+    { 
     getMoviesById(id).then(movie => {
       selectedMovieDiv.innerHTML = "Selected movie data:";
       newChild.innerHTML = "Id: " + movie.id + " | " +                          
