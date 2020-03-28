@@ -19,10 +19,7 @@
             "id": 3,
             "title": "Avengers: Age of Ultron",
             "year": 2000,
-            "actorsById": [
-              3,
-              2
-            ]
+            "actorsById": []
         },
         {
             "id": 4,
