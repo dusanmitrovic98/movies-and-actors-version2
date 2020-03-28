@@ -112,29 +112,27 @@ function selectMovieOnChange(id){
       movieActorsListDiv.innerHTML = "";
     }else
     {
-      getMoviesById(id).then(movie => {
+    getMoviesById(id).then(movie => {
       selectedMovieDiv.innerHTML = "Selected movie data:";
       newChild.innerHTML = "Id: " + movie.id + " | " +                          
                            "Title: " + movie.title + " | " +
                            "Year: " + movie.year;
-      if(movie.actorsById.length == 0)
-      {
-        movieActorsListDiv.innerHTML = `${movie.title} actors list is empty!`;
-      }else
-      {
-        movieActorsListDiv.innerHTML = `${movie.title} actors list:`;
-        Promise.all(movie.actorsById.map(actorId => {
-          if(actorId != 0)
-            getActorsById(actorId).then(actor => {
-              drawDivHtmlElement(newActorsList, "Actor id: " + actor.id + " | " +
-                                                "name: " + actor.name + " | " +
-                                                "last name: " + actor.lastName);
-            })
-        }))
-       }
-   
-    console.log(movie.title);
+     if(movie.actorsById.length == 0)
+     {
+       movieActorsListDiv.innerHTML = `${movie.title} actors list is empty!`;
+     }else
+     {
+       movieActorsListDiv.innerHTML = `${movie.title} actors list:`;
+       Promise.all(movie.actorsById.map(actorId => {
+         if(actorId != 0)
+          getActorsById(actorId).then(actor => {
+           drawDivHtmlElement(newActorsList, "Actor id: " + actor.id + " | " +
+                                             "name: " + actor.name + " | " +
+                                             "last name: " + actor.lastName);
+           })
+       }))
+     }
+     console.log(movie.title);
   })
 }
- 
 }
